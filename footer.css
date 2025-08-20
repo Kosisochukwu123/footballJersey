@@ -1,0 +1,744 @@
+footer {
+  background-color: #f27324;
+  height: 60vh;
+  width: 100%;
+}
+
+.footer-up {
+  display: flex;
+  padding-top: 3rem;
+}
+
+.qq {
+  width: 100%;
+  height: 30vh;
+  padding-left: 4rem;
+}
+
+.qq h1 {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: var(--header-font);
+}
+
+.qq p {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-family: var(--text-font);
+  margin-top: 0.5rem;
+  line-height: 1.3rem;
+}
+
+.qq button {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  width: 40%;
+  text-transform: capitalize;
+}
+
+.zz {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zz h2 {
+  color: white;
+  font-family: var(--header-font);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+}
+
+.zz ul {
+  list-style-type: none;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+.zz ul li {
+  margin-top: 0.3rem;
+}
+
+.zz ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--text-font);
+  letter-spacing: 0.1em;
+}
+
+.footer-down {
+  width: 100%;
+  height: 10vh;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.footer-down p {
+  font-family: var(--header-font);
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+.footer-down-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 30px;
+}
+
+.footer-down-icons a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+/* Your existing footer styles */
+footer {
+  background-color: #f27324;
+  height: 60vh;
+  width: 100%;
+}
+
+.footer-up {
+  display: flex;
+  padding-top: 3rem;
+}
+
+.qq {
+  width: 100%;
+  height: 30vh;
+  padding-left: 4rem;
+}
+
+.qq h1 {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: var(--header-font);
+}
+
+.qq p {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-family: var(--text-font);
+  margin-top: 0.5rem;
+  line-height: 1.3rem;
+}
+
+.qq button {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  width: 40%;
+  text-transform: capitalize;
+}
+
+.zz {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zz h2 {
+  color: white;
+  font-family: var(--header-font);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+}
+
+.zz ul {
+  list-style-type: none;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+.zz ul li {
+  margin-top: 0.3rem;
+}
+
+.zz ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--text-font);
+  letter-spacing: 0.1em;
+}
+
+.footer-down {
+  width: 100%;
+  height: 10vh;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.footer-down p {
+  font-family: var(--header-font);
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+.footer-down-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 30px;
+}
+
+.footer-down-icons a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ==============================================
+   MEDIA QUERIES FOR RESPONSIVE FOOTER
+   ============================================== */
+
+/* Extra Large Desktops (1400px and up) */
+@media (min-width: 1400px) {
+  footer {
+    height: 65vh;
+  }
+  
+  .footer-up {
+    padding-top: 4rem;
+  }
+  
+  .qq {
+    padding-left: 6rem;
+    height: 35vh;
+  }
+  
+  .qq h1 {
+    font-size: 2.5rem;
+  }
+  
+  .qq p {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+  
+  .qq button {
+    width: 35%;
+    font-size: 16px;
+  }
+  
+  .zz h2 {
+    font-size: 1.6rem;
+  }
+  
+  .footer-down {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  
+  .footer-down-icons {
+    font-size: 35px;
+  }
+}
+
+/* Large Desktops (1200px to 1399px) */
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .qq {
+    padding-left: 5rem;
+  }
+  
+  .qq h1 {
+    font-size: 2.2rem;
+  }
+  
+  .qq p {
+    font-size: 13px;
+  }
+  
+  .qq button {
+    width: 38%;
+  }
+  
+  .footer-down {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  .footer-down-icons {
+    font-size: 32px;
+  }
+}
+
+/* Medium Desktops/Laptops (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  footer {
+    height: 55vh;
+  }
+  
+  .footer-up {
+    padding-top: 2.5rem;
+  }
+  
+  .qq {
+    padding-left: 3rem;
+    height: 28vh;
+  }
+  
+  .qq h1 {
+    font-size: 1.8rem;
+  }
+  
+  .qq button {
+    width: 45%;
+  }
+  
+  .zz {
+    height: 28vh;
+  }
+  
+  .zz h2 {
+    font-size: 1.3rem;
+  }
+  
+  .footer-down {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 1.5rem;
+  }
+  
+  .footer-down-icons {
+    font-size: 28px;
+  }
+}
+
+/* Small Laptops/Large Tablets (768px to 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  footer {
+    height: 70vh;
+  }
+  
+  .footer-up {
+    flex-direction: column;
+    padding-top: 2rem;
+    align-items: center;
+  }
+  
+  .qq {
+    width: 90%;
+    height: 25vh;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .qq h1 {
+    font-size: 1.6rem;
+  }
+  
+  .qq p {
+    font-size: 13px;
+    line-height: 1.4rem;
+  }
+  
+  .qq button {
+    width: 50%;
+    font-size: 13px;
+  }
+  
+  .zz {
+    width: 90%;
+    height: 25vh;
+    align-items: center;
+  }
+  
+  .zz h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .zz ul {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .footer-down {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    height: 12vh;
+  }
+  
+  .footer-down p {
+    font-size: 14px;
+  }
+  
+  .footer-down-icons {
+    font-size: 26px;
+    gap: 0.8rem;
+  }
+}
+
+/* Tablets (576px to 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  footer {
+    height: 80vh;
+  }
+  
+  .footer-up {
+    flex-direction: column;
+    padding-top: 1.5rem;
+    align-items: center;
+  }
+  
+  .qq {
+    width: 95%;
+    height: 30vh;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .qq h1 {
+    font-size: 1.4rem;
+  }
+  
+  .qq p {
+    font-size: 12px;
+    line-height: 1.3rem;
+  }
+  
+  .qq button {
+    width: 60%;
+    font-size: 12px;
+    padding: 0.5rem;
+  }
+  
+  .zz {
+    width: 95%;
+    height: 30vh;
+  }
+  
+  .zz h2 {
+    font-size: 1.1rem;
+  }
+  
+  .zz ul li {
+    margin-top: 0.4rem;
+  }
+  
+  .zz ul li a {
+    font-size: 14px;
+  }
+  
+  .footer-down {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    height: 15vh;
+    text-align: center;
+  }
+  
+  .footer-down p {
+    font-size: 12px;
+  }
+  
+  .footer-down-icons {
+    font-size: 24px;
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile Landscape (481px to 575px) */
+@media (max-width: 575px) and (min-width: 481px) {
+  footer {
+    height: 85vh;
+  }
+  
+  .footer-up {
+    padding-top: 1rem;
+  }
+  
+  .qq {
+    height: 35vh;
+    margin-bottom: 1rem;
+  }
+  
+  .qq h1 {
+    font-size: 1.2rem;
+  }
+  
+  .qq p {
+    font-size: 11px;
+    line-height: 1.2rem;
+  }
+  
+  .qq button {
+    width: 70%;
+    font-size: 11px;
+    padding: 0.4rem;
+  }
+  
+  .zz {
+    height: 32vh;
+  }
+  
+  .zz h2 {
+    font-size: 1rem;
+  }
+  
+  .zz ul li a {
+    font-size: 12px;
+  }
+  
+  .footer-down {
+    height: 18vh;
+    gap: 0.8rem;
+  }
+  
+  .footer-down p {
+    font-size: 11px;
+  }
+  
+  .footer-down-icons {
+    font-size: 22px;
+  }
+}
+
+/* Mobile Portrait (320px to 480px) */
+@media (max-width: 480px) {
+  footer {
+    height: 100vh;
+  }
+  
+  .footer-up {
+    flex-direction: column;
+    padding-top: 0.8rem;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+  
+  .qq {
+    width: 100%;
+    height: 38vh;
+    padding: 0 1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .qq h1 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    /* border: 2px solid yellow; */
+    text-align: left;
+  }
+  
+  .qq p {
+    font-size: 10px;
+    line-height: 1.5rem;
+    margin-top: 0.3rem;
+      text-align: left;
+  }
+  
+  .qq button {
+    width: 80%;
+    font-size: 10px;
+    padding: 0.4rem;
+    margin-top: 1.3rem;
+  }
+  
+  .zz {
+    width: 100%;
+    height: 35vh;
+    padding: 0 1rem;
+    /* border: 2px solid yellow; */
+    margin-top: -8rem;
+  /* justify-content: left !important; */
+  }
+  
+  .zz h2 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    margin-left: -14rem;
+  }
+  
+  .zz ul {
+    margin-top: 0.3rem;
+    /* border: 2px solid blue; */
+    margin-left: -17rem;
+  }
+  
+  .zz ul li {
+    margin-top: 0.2rem;
+    text-align: left;
+    /* border: 2px solid red; */
+  }
+  
+  .zz ul li a {
+    font-size: 13px;
+  }
+  
+  .footer-down {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0;
+    height: 17vh;
+    text-align: center;
+  }
+  
+  .footer-down p {
+    font-size: 10px;
+  }
+  
+  .footer-down-icons {
+    font-size: 20px;
+    gap: 1rem;
+  }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+  footer {
+    height: 95vh;
+  }
+  
+  .footer-up {
+    padding-top: 0.5rem;
+  }
+  
+  .qq {
+    height: 40vh;
+    padding: 0 0.5rem;
+  }
+  
+  .qq h1 {
+    font-size: 1rem;
+  }
+  
+  .qq p {
+    font-size: 9px;
+    line-height: 1rem;
+  }
+  
+  .qq button {
+    width: 90%;
+    font-size: 9px;
+    padding: 0.3rem;
+  }
+  
+  .zz {
+    height: 38vh;
+    padding: 0 0.5rem;
+  }
+  
+  .zz h2 {
+    font-size: 0.8rem;
+  }
+  
+  .zz ul li a {
+    font-size: 10px;
+  }
+  
+  .footer-down {
+    height: 17vh;
+    padding: 0.3rem 0.5rem;
+  }
+  
+  .footer-down p {
+    font-size: 9px;
+  }
+  
+  .footer-down-icons {
+    font-size: 18px;
+    gap: 0.8rem;
+  }
+}
+
+/* Landscape Orientation on Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+  footer {
+    height: 120vh;
+  }
+  
+  .footer-up {
+    padding-top: 1rem;
+  }
+  
+  .qq {
+    height: 45vh;
+  }
+  
+  .zz {
+    height: 45vh;
+  }
+  
+  .footer-down {
+    height: 25vh;
+    margin-top: 1rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  footer {
+    background-color: transparent;
+    height: auto;
+    page-break-inside: avoid;
+  }
+  
+  .footer-up {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  
+  .qq, .zz {
+    height: auto;
+    padding: 0.5rem;
+  }
+  
+  .qq h1, .zz h2 {
+    color: black;
+  }
+  
+  .qq p, .zz ul li a {
+    color: black;
+  }
+  
+  .qq button {
+    display: none;
+  }
+  
+  .footer-down {
+    height: auto;
+    padding: 0.5rem;
+    border-top: 1px solid black;
+  }
+  
+  .footer-down p {
+    color: black;
+  }
+  
+  .footer-down-icons {
+    display: none;
+  }
+}

@@ -1,0 +1,127 @@
+.services {
+  height: 10vh;
+  margin-top: 1rem;
+  width: var(--custom-width);
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-box {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-box p {
+  font-weight: 600;
+  color: gray;
+  font-family: "Almarai", sans-serif;
+}
+
+.services-box img {
+  width: 2.5rem;
+  height: 2.5rem;
+  letter-spacing: 0.1em;
+  margin-right: 0.5rem;
+}
+
+
+/* ===============================
+   MEDIA QUERIES FOR SERVICES
+   =============================== */
+
+/* Large Tablets / Small Laptops */
+@media (max-width: 1200px) {
+  .services {
+    width: 90%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .services {
+    flex-wrap: wrap; /* allow wrapping */
+    justify-content: center;
+    gap: 1rem;
+    height: auto; /* remove fixed height */
+  }
+
+  .services-box {
+    flex: 1 1 45%; /* two per row */
+    justify-content: flex-start;
+  }
+
+  .services-box p {
+    font-size: 15px;
+  }
+}
+
+/* Large Phones */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column; /* stack items */
+    align-items: flex-start;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .services-box {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .services-box img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .services-box p {
+    font-size: 14px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 576px) {
+  .services {
+    gap: 0.8rem;
+    background: linear-gradient(135deg, #e0f7fa 0%, #fffde4 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 0.5rem;
+  }
+
+  .services-box{
+     height: 10vh;
+     text-align: center;
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -3rem;
+  }
+
+  .services-box img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .services-box p {
+    font-size: 15px;
+    line-height: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+  .services-box img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .services-box p {
+    font-size: 12px;
+  }
+}

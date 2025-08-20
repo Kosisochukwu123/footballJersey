@@ -1,0 +1,266 @@
+.display {
+  height: 130vh;
+  width: var(--custom-width);
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+.display-up {
+  text-align: center;
+}
+
+.display-up h3 {
+  font-family: var(--header-font);
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+
+.display-up p {
+  font-family: var(--text-font);
+  font-size: var(--text-fontsize);
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+}
+
+.display-down {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.display-down-box {
+  width: 100%;
+  height: 50vh;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.208);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.display-down-box i {
+  color: white;
+}
+
+.display-button {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.display-button button {
+  padding: 1em 1rem;
+  width: 40%;
+  text-transform: capitalize;
+  border-radius: 50px;
+}
+
+/* BELOW YOU CAN BE ABLE TO CHANGE THE IMAGES ON THE WEBSITE ACCORDINGLY */
+
+.display-down-box:nth-child(1) {
+  background-image: url(images/barcajersey.png);
+}
+.display-down-box:nth-child(2) {
+  background-image: url(images/customized-kit.png);
+}
+.display-down-box:nth-child(3) {
+  background-image: url(images/manunited-black.png);
+}
+.display-down-box:nth-child(4) {
+  background-image: url(images/barcajersey.png);
+}
+.display-down-box:nth-child(5) {
+  background-image: url(images/barcajersey.png);
+}
+.display-down-box:nth-child(6) {
+  background-image: url(images/barcajersey.png);
+}
+
+.uu {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  backdrop-filter: blur(10px);
+  background-color: #0000002c;
+}
+
+.uu p {
+  font-size: 15px;
+  font-family: var(--header-font);
+  text-transform: capitalize;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.uu i {
+  font-size: 20px;
+}
+
+.ii {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.199);
+}
+
+.ii p {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  color: white;
+  text-transform: capitalize;
+  font-family: var(--header-font);
+}
+
+.ii button {
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 20px;
+  width: 40%;
+  background-color: black;
+  color: white;
+  font-family: var(--header-font);
+}
+
+
+/* ===============================
+   MEDIA QUERIES
+   =============================== */
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  .display {
+    width: 90%; /* shrink width a bit */
+    height: auto; /* avoid forcing 130vh */
+    margin-top: 5rem;
+  }
+
+  .display-down-box {
+    height: 40vh; /* scale cards down */
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .display-down {
+    grid-template-columns: 1fr 1fr; /* 2 per row */
+  }
+
+  .display-down-box {
+    height: 40vh;
+  }
+
+  .display-up h3 {
+    font-size: 26px;
+  }
+
+  .display-up p {
+    font-size: calc(var(--text-fontsize) - 2px);
+  }
+}
+
+/* Large Phones */
+@media (max-width: 768px) {
+  .display {
+    width: 95%;
+    margin-top: 4rem;
+  }
+
+  .display-down {
+    grid-template-columns: 1fr; /* single column */
+    gap: 1.5rem;
+  }
+
+  .display-down-box {
+    height: 45vh; /* taller for vertical stacking */
+  }
+
+  .display-button button {
+    width: 60%; /* more space for thumb tap */
+  }
+
+  .ii button {
+    width: auto;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 576px) {
+.display {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 0.3rem;
+  }
+
+  .display-down {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    
+  }
+
+  .display-up h3 {
+    font-size: 22px;
+    letter-spacing: 0.05em;
+  }
+
+  .display-up p {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+
+  .display-down-box {
+    height: 40vh;
+    border-radius: 8px;
+  }
+
+  .uu, .ii {
+    height: 8vh;
+    padding: 0.5rem 1rem;
+  }
+
+  .uu p, .ii p {
+    font-size: 10px;
+  }
+
+  .ii button {
+    font-size: 10px;
+    padding: 0.4rem 1rem;
+    width: 70%;
+  }
+}
+
+/* Extra Small Devices (very small phones) */
+@media (max-width: 400px) {
+  .display-up h3 {
+    font-size: 18px;
+  }
+
+  .display-up p {
+    font-size: 12px;
+  }
+
+  .display-down-box {
+    height: 35vh;
+  }
+
+  .display-button button {
+    width: 80%;
+    font-size: 14px;
+  }
+}

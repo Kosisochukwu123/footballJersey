@@ -1,0 +1,282 @@
+.activity {
+  height: 100vh;
+  width: var(--custom-width);
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.activity-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.activity-top h2 {
+  width: 40%;
+  font-size: 30px;
+  font-family: var(--header-font);
+}
+
+.activity-top p {
+  width: 50%;
+  margin-top: 1rem;
+  font-family: var(--text-font);
+  font-size: var(--text-fontsize);
+  letter-spacing: 0.1em;
+}
+
+.activity-content {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.aa {
+  height: 90vh;
+}
+
+.bb {
+  height: 90vh;
+}
+
+.cc {
+  display: flex;
+  gap: 1rem;
+}
+
+.activity-overlay {
+  height: 15vh;
+  width: 100%;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 20px 20px 0px 0px;
+  font-family: var(--text-font);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.activity-overlay button {
+  height: 9vh;
+  border-radius: 50%;
+  border: none;
+  width: 9%;
+}
+
+.activity-content-box-one,
+.activity-content-box-two,
+.activity-content-box {
+  background-color: gray;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  border: none;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.activity-content-box-one {
+  background-image: url(images/barcajersey.png);
+  height: inherit;
+}
+
+.activity-content-box-two {
+  height: 45vh;
+  width: 50%;
+  background-image: url(images/barcajersey.png);
+}
+
+.activity-content-box-two:nth-child(2) {
+  background-image: url(images/barcajersey.png);
+}
+
+.activity-content-box-two .activity-overlay button {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-content-box {
+  height: 43.5vh;
+  margin-top: 0.5rem;
+  background-image: url(images/barcajersey.png);
+}
+
+/* ===============================
+   MEDIA QUERIES FOR ACTIVITY
+   =============================== */
+
+/* Large Tablets / Small Laptops */
+@media (max-width: 1200px) {
+  .activity {
+    width: 90%;
+    height: auto;
+  }
+
+  .activity-top h2 {
+    font-size: 26px;
+    width: 45%;
+  }
+
+  .activity-top p {
+    font-size: calc(var(--text-fontsize) - 1px);
+    width: 50%;
+  }
+
+  .activity-content {
+    height: auto;
+  }
+
+  .aa,
+  .bb {
+    height: auto;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .activity-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .activity-top h2,
+  .activity-top p {
+    width: 100%;
+  }
+
+  .activity-content {
+    grid-template-columns: 1fr; /* collapse to single column */
+    gap: 1.5rem;
+    height: auto;
+  }
+
+  .aa,
+  .bb {
+    height: auto;
+  }
+
+  .activity-content-box-one,
+  .activity-content-box-two,
+  .activity-content-box {
+    height: 50vh; /* consistent height */
+  }
+}
+
+/* Large Phones */
+@media (max-width: 768px) {
+  .activity {
+    width: 95%;
+    margin-top: 3rem;
+  }
+
+  .activity-top h2 {
+    font-size: 24px;
+  }
+
+  .activity-top p {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+
+  .activity-content-box-one,
+  .activity-content-box-two,
+  .activity-content-box {
+    height: 45vh;
+  }
+
+  .activity-overlay {
+    height: 12vh;
+    padding: 0.8rem 1.2rem;
+    font-size: 12px;
+  }
+
+  .activity-overlay button {
+    height: 7vh;
+    width: 15%;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 576px) {
+  .activity {
+    width: 95% !important;
+  }
+
+  .activity-content {
+    padding-left: 0.5rem;
+  }
+
+  .activity-top h3 {
+    font-size: 10px !important;
+  }
+
+  .activity-top p {
+    font-size: 13px !important;
+    text-align: justify;
+    margin-top: -0.5rem;
+  }
+
+  .activity-content-box-one,
+  .activity-content-box-two,
+  .activity-content-box {
+    height: 40vh;
+  }
+
+
+  .activity-content-box-two h3,
+   .activity-content-box-one h3,
+   .activity-content-box h3{
+    font-size: 14px !important;
+   }
+
+
+  .activity-overlay {
+    height: 10vh;
+    padding: 0.5rem 1rem;
+  }
+
+  .activity-overlay button {
+    height: 6vh;
+    width: 18%;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+  .activity-top h2 {
+    font-size: 18px;
+  }
+
+  .activity-top p {
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
+
+  .activity-content-box-one,
+  .activity-content-box-two,
+  .activity-content-box {
+    height: 35vh;
+  }
+
+  .activity-overlay {
+    height: 8vh;
+    font-size: 10px;
+  }
+
+  .activity-overlay button {
+    height: 5.5vh;
+    width: 22%;
+  }
+}

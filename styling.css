@@ -1,0 +1,475 @@
+.styling {
+  /* background-color: red; */
+  height: 100vh;
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.styling-left {
+  width: 60%;
+  background: linear-gradient(to top, #f27324d3, #ffb6b600);
+  display: flex;
+  align-items: center;
+}
+
+.styling-left-content {
+  text-align: center;
+  width: 100%;
+}
+
+.styling-left-content h2 {
+  font-size: 4.5rem;
+  color: black;
+  font-weight: 600;
+  font-family: var(--header-font);
+  margin-top: 1rem;
+}
+
+.styling-left-content p {
+  font-size: 1.2rem;
+  color: black;
+  margin-top: 1rem;
+  font-family: var(--header-font);
+}
+
+.styling-left-content i {
+  font-size: 80px;
+}
+
+.styling-left-content button {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.styling-right {
+  width: 40%;
+  background-image: url(images/chelsea-away-kit.jpg);
+  background-position: top;
+  background-size: cover;
+  background-color: gray;
+}
+
+/* ==============================================
+   MEDIA QUERIES FOR RESPONSIVE STYLING SECTION
+   ============================================== */
+
+/* Extra Large Desktops (1400px and up) */
+@media (min-width: 1400px) {
+  .styling {
+    margin-top: 4rem;
+  }
+  
+  .styling-left-content h2 {
+    font-size: 5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .styling-left-content p {
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    padding: 0 2rem;
+  }
+  
+  .styling-left-content i {
+    font-size: 90px;
+  }
+  
+  .styling-left-content button {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+/* Large Desktops (1200px to 1399px) */
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .styling-left-content h2 {
+    font-size: 4.8rem;
+  }
+  
+  .styling-left-content p {
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+  }
+  
+  .styling-left-content i {
+    font-size: 85px;
+  }
+  
+  .styling-left-content button {
+    font-size: 1.05rem;
+    padding: 0.7rem 1.8rem;
+  }
+}
+
+/* Medium Desktops/Laptops (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .styling {
+    margin-top: 2.5rem;
+  }
+  
+  .styling-left-content h2 {
+    font-size: 4rem;
+    margin-top: 0.8rem;
+  }
+  
+  .styling-left-content p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+  
+  .styling-left-content i {
+    font-size: 75px;
+  }
+  
+  .styling-left-content button {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+  
+  .styling-right {
+    background-position: center;
+  }
+}
+
+/* Small Laptops/Large Tablets (768px to 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .styling {
+    margin-top: 2rem;
+    height: 80vh;
+  }
+  
+  .styling-left {
+    width: 55%;
+  }
+  
+  .styling-right {
+    width: 45%;
+    background-position: center;
+  }
+  
+  .styling-left-content h2 {
+    font-size: 3.2rem;
+    margin-top: 0.5rem;
+    line-height: 1.1;
+  }
+  
+  .styling-left-content p {
+    font-size: 1rem;
+    padding: 0 1rem;
+    line-height: 1.3;
+  }
+  
+  .styling-left-content i {
+    font-size: 65px;
+  }
+  
+  .styling-left-content button {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+/* Tablets (576px to 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .styling {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    margin-top: 1.5rem;
+  }
+  
+  .styling-left {
+    width: 100%;
+    height: 60vh;
+    order: 2;
+  }
+  
+  .styling-right {
+    width: 100%;
+    height: 40vh;
+    order: 1;
+    background-position: center;
+  }
+  
+  .styling-left-content {
+    padding: 2rem 1rem;
+  }
+  
+  .styling-left-content h2 {
+    font-size: 2.8rem;
+    margin-top: 0.5rem;
+    line-height: 1.1;
+  }
+  
+  .styling-left-content p {
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    padding: 0 1rem;
+    line-height: 1.4;
+  }
+  
+  .styling-left-content i {
+    font-size: 55px;
+  }
+  
+  .styling-left-content button {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Mobile Landscape (481px to 575px) */
+@media (max-width: 575px) and (min-width: 481px) {
+  .styling {
+    flex-direction: column;
+    height: auto;
+    min-height: 90vh;
+    margin-top: 1rem;
+  }
+  
+  .styling-left {
+    height: 55vh;
+    order: 2;
+  }
+  
+  .styling-right {
+    height: 35vh;
+    order: 1;
+  }
+  
+  .styling-left-content {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .styling-left-content h2 {
+    font-size: 2.4rem;
+    margin-top: 0.3rem;
+    line-height: 1;
+  }
+  
+  .styling-left-content p {
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    padding: 0 0.5rem;
+    line-height: 1.3;
+  }
+  
+  .styling-left-content i {
+    font-size: 45px;
+  }
+  
+  .styling-left-content button {
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Mobile Portrait (320px to 480px) */
+@media (max-width: 480px) {
+  .styling {
+    flex-direction: row-reverse;
+    height: auto;
+    /* min-height: 85vh; */
+    margin-top: 2.8rem;
+  }
+  
+  .styling-left {
+    width: 100%;
+    height: 50vh;
+    order: 2;
+  }
+  
+  .styling-right {
+    width: 100%;
+    height: 50vh;
+    order: 1;
+    background-position: center;
+    /* background: url(images/chelsea-away-kit-mobile.jpg) !important; */
+    background-image: url(images/chelsea-away-kit.jpg) !important;
+  }
+  
+  .styling-left-content {
+    padding: 1rem 0.5rem;
+  }
+  
+  .styling-left-content h2 {
+    font-size: 2rem;
+    margin-top: 0.2rem;
+    line-height: 0.9;
+    word-wrap: break-word;
+  }
+  
+  .styling-left-content p {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    padding: 0 0.3rem;
+    line-height: 1.2;
+  }
+  
+  .styling-left-content i {
+    font-size: 40px;
+  }
+  
+  .styling-left-content button {
+    margin-top: 0.6rem;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+  .styling {
+    flex-direction: column;
+    height: auto;
+    min-height: 80vh;
+    margin-top: 0.5rem;
+  }
+  
+  .styling-left {
+    height: 45vh;
+    order: 2;
+  }
+  
+  .styling-right {
+    height: 35vh;
+    order: 1;
+  }
+  
+  .styling-left-content {
+    padding: 0.8rem 0.3rem;
+  }
+  
+  .styling-left-content h2 {
+    font-size: 1.6rem;
+    margin-top: 0.1rem;
+    line-height: 0.85;
+    word-break: break-word;
+  }
+  
+  .styling-left-content p {
+    font-size: 0.7rem;
+    margin-top: 0.4rem;
+    padding: 0 0.2rem;
+    line-height: 1.1;
+  }
+  
+  .styling-left-content i {
+    font-size: 35px;
+  }
+  
+  .styling-left-content button {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+/* High DPI/Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .styling-right {
+    background-image: url(images/chelsea-away-kit@2x.jpg); /* Use high-res image if available */
+  }
+}
+
+/* Landscape Orientation on Mobile Devices */
+@media (max-width: 767px) and (orientation: landscape) {
+  .styling {
+    flex-direction: row;
+    height: 100vh;
+    margin-top: 0.5rem;
+  }
+  
+  .styling-left {
+    width: 60%;
+    height: 100vh;
+    order: 1;
+  }
+  
+  .styling-right {
+    width: 40%;
+    height: 100vh;
+    order: 2;
+  }
+  
+  .styling-left-content {
+    padding: 1rem;
+  }
+  
+  .styling-left-content h2 {
+    font-size: 1.8rem;
+    margin-top: 0.2rem;
+  }
+  
+  .styling-left-content p {
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+  }
+  
+  .styling-left-content i {
+    font-size: 35px;
+  }
+  
+  .styling-left-content button {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .styling {
+    height: auto;
+    margin-top: 1rem;
+    page-break-inside: avoid;
+    flex-direction: column;
+  }
+  
+  .styling-left {
+    width: 100%;
+    height: auto;
+    background: none;
+    padding: 1rem;
+  }
+  
+  .styling-right {
+    width: 100%;
+    height: 15vh;
+    background-color: #ccc;
+    background-image: none;
+  }
+  
+  .styling-left-content h2 {
+    color: black;
+    font-size: 2rem;
+  }
+  
+  .styling-left-content p {
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .styling-left-content i {
+    font-size: 40px;
+    color: black;
+  }
+  
+  .styling-left-content button {
+    display: none;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .styling-left {
+    background: linear-gradient(to bottom, #f27324d3, #ffb6b600);
+  }
+}
