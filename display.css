@@ -48,7 +48,6 @@
 }
 
 .display-button {
-  /* border: 2px solid black; */
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -56,9 +55,10 @@
 
 .display-button button {
   padding: 1em 1rem;
-  width: 40%;
+  width: 20%;
   text-transform: capitalize;
-  border-radius: 50px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* BELOW YOU CAN BE ABLE TO CHANGE THE IMAGES ON THE WEBSITE ACCORDINGLY */
@@ -99,6 +99,7 @@
   text-transform: capitalize;
   color: white;
   font-weight: 600;
+  margin-top: 1rem;
   letter-spacing: 0.1em;
 }
 
@@ -108,9 +109,9 @@
 
 .ii {
   height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
   padding-left: 1rem;
   padding-right: 1rem;
   backdrop-filter: blur(10px);
@@ -124,14 +125,15 @@
   color: white;
   text-transform: capitalize;
   font-family: var(--header-font);
+  margin-top: 1rem;
 }
 
 .ii button {
   padding: 0.5rem 1rem;
   text-transform: capitalize;
   border: none;
-  border-radius: 20px;
-  width: 40%;
+  width: 30%;
+  font-size: 10px;
   background-color: black;
   color: white;
   font-family: var(--header-font);
@@ -194,9 +196,14 @@
     width: 60%; /* more space for thumb tap */
   }
 
+  .ii{
+    padding: 0rem 4rem !important;
+  }
+
   .ii button {
     width: auto;
     padding: 0.6rem 1.2rem;
+    width: 30%;
   }
 }
 
@@ -239,7 +246,7 @@
   }
 
   .ii button {
-    font-size: 10px;
+    font-size: 8px;
     padding: 0.4rem 1rem;
     width: 70%;
   }

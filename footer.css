@@ -1,6 +1,5 @@
 footer {
   background-color: #f27324;
-  height: 60vh;
   width: 100%;
 }
 
@@ -44,10 +43,6 @@ footer {
 
 .zz {
   width: 100%;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .zz h2 {
@@ -64,130 +59,20 @@ footer {
   margin-top: 0.5rem;
 }
 
-.zz ul li {
-  margin-top: 0.3rem;
-}
-
 .zz ul li a {
   text-decoration: none;
   color: white;
   font-family: var(--text-font);
   letter-spacing: 0.1em;
-}
-
-.footer-down {
-  width: 100%;
-  height: 10vh;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.footer-down p {
-  font-family: var(--header-font);
-  color: white;
-  letter-spacing: 0.1em;
-}
-
-.footer-down-icons {
-  display: flex;
-  gap: 1rem;
-  font-size: 30px;
-}
-
-.footer-down-icons a {
-  text-decoration: none;
-  color: white;
-}
-
-
-
-
-/* Your existing footer styles */
-footer {
-  background-color: #f27324;
-  height: 60vh;
-  width: 100%;
-}
-
-.footer-up {
-  display: flex;
-  padding-top: 3rem;
-}
-
-.qq {
-  width: 100%;
-  height: 30vh;
-  padding-left: 4rem;
-}
-
-.qq h1 {
-  color: white;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: var(--header-font);
-}
-
-.qq p {
-  color: white;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  font-family: var(--text-font);
-  margin-top: 0.5rem;
-  line-height: 1.3rem;
-}
-
-.qq button {
-  background-color: black;
-  color: white;
+  margin-top: 0.7rem;
+  margin-left: -2rem;
   font-size: 14px;
-  border-radius: 5px;
-  margin-top: 0.5rem;
-  width: 40%;
-  text-transform: capitalize;
-}
-
-.zz {
-  width: 100%;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.zz h2 {
-  color: white;
-  font-family: var(--header-font);
-  font-size: 1.4rem;
-  text-transform: capitalize;
-  letter-spacing: 0.1em;
-}
-
-.zz ul {
-  list-style-type: none;
-  text-transform: capitalize;
-  margin-top: 0.5rem;
-}
-
-.zz ul li {
-  margin-top: 0.3rem;
-}
-
-.zz ul li a {
-  text-decoration: none;
-  color: white;
-  font-family: var(--text-font);
-  letter-spacing: 0.1em;
 }
 
 .footer-down {
-  width: 100%;
+  width: 95%;
   height: 10vh;
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -212,18 +97,12 @@ footer {
   color: white;
 }
 
-/* ==============================================
-   MEDIA QUERIES FOR RESPONSIVE FOOTER
-   ============================================== */
-
-/* Extra Large Desktops (1400px and up) */
-@media (min-width: 1400px) {
-  footer {
-    height: 65vh;
-  }
-  
+/* ========== ULTRA WIDE SCREENS ========== */
+@media screen and (min-width: 2560px) {
   .footer-up {
-    padding-top: 4rem;
+    padding-top: 5rem;
+    max-width: 1800px;
+    margin: 0 auto;
   }
   
   .qq {
@@ -232,7 +111,60 @@ footer {
   }
   
   .qq h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+  }
+  
+  .qq p {
+    font-size: 16px;
+    line-height: 1.6rem;
+  }
+  
+  .qq button {
+    font-size: 18px;
+    width: 30%;
+    padding: 1.2rem;
+  }
+  
+  .zz h2 {
+    font-size: 1.8rem;
+  }
+  
+  .zz ul li a {
+    font-size: 16px;
+  }
+  
+  .footer-down {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-top: 6rem;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .footer-down p {
+    font-size: 18px;
+  }
+  
+  .footer-down-icons {
+    font-size: 40px;
+    gap: 2rem;
+  }
+}
+
+/* ========== LARGE DESKTOP ========== */
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+  .footer-up {
+    padding-top: 4rem;
+  }
+  
+  .qq {
+    padding-left: 5rem;
+    height: 32vh;
+  }
+  
+  .qq h1 {
+    font-size: 2.4rem;
   }
   
   .qq p {
@@ -241,28 +173,43 @@ footer {
   }
   
   .qq button {
-    width: 35%;
     font-size: 16px;
+    width: 35%;
+    padding: 1rem;
   }
   
   .zz h2 {
     font-size: 1.6rem;
   }
   
+  .zz ul li a {
+    font-size: 15px;
+  }
+  
   .footer-down {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 5rem;
+  }
+  
+  .footer-down p {
+    font-size: 16px;
   }
   
   .footer-down-icons {
     font-size: 35px;
+    gap: 1.5rem;
   }
 }
 
-/* Large Desktops (1200px to 1399px) */
-@media (max-width: 1399px) and (min-width: 1200px) {
+/* ========== STANDARD DESKTOP ========== */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .footer-up {
+    padding-top: 3.5rem;
+  }
+  
   .qq {
-    padding-left: 5rem;
+    padding-left: 4.5rem;
   }
   
   .qq h1 {
@@ -271,82 +218,42 @@ footer {
   
   .qq p {
     font-size: 13px;
+    line-height: 1.4rem;
   }
   
   .qq button {
+    font-size: 15px;
     width: 38%;
   }
   
+  .zz h2 {
+    font-size: 1.5rem;
+  }
+  
   .footer-down {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+  
+  .footer-down p {
+    font-size: 15px;
   }
   
   .footer-down-icons {
     font-size: 32px;
+    gap: 1.2rem;
   }
 }
 
-/* Medium Desktops/Laptops (992px to 1199px) */
-@media (max-width: 1199px) and (min-width: 992px) {
-  footer {
-    height: 55vh;
-  }
-  
+/* ========== TABLET LANDSCAPE ========== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .footer-up {
     padding-top: 2.5rem;
   }
   
   .qq {
     padding-left: 3rem;
-    height: 28vh;
-  }
-  
-  .qq h1 {
-    font-size: 1.8rem;
-  }
-  
-  .qq button {
-    width: 45%;
-  }
-  
-  .zz {
-    height: 28vh;
-  }
-  
-  .zz h2 {
-    font-size: 1.3rem;
-  }
-  
-  .footer-down {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-top: 1.5rem;
-  }
-  
-  .footer-down-icons {
-    font-size: 28px;
-  }
-}
-
-/* Small Laptops/Large Tablets (768px to 991px) */
-@media (max-width: 991px) and (min-width: 768px) {
-  footer {
-    height: 70vh;
-  }
-  
-  .footer-up {
-    flex-direction: column;
-    padding-top: 2rem;
-    align-items: center;
-  }
-  
-  .qq {
-    width: 90%;
-    height: 25vh;
-    padding-left: 0;
-    text-align: center;
-    margin-bottom: 1rem;
+    height: 26vh;
   }
   
   .qq h1 {
@@ -354,40 +261,34 @@ footer {
   }
   
   .qq p {
-    font-size: 13px;
-    line-height: 1.4rem;
+    font-size: 10px;
+    line-height: 1.1rem;
   }
   
   .qq button {
-    width: 50%;
-    font-size: 13px;
-  }
-  
-  .zz {
-    width: 90%;
-    height: 25vh;
-    align-items: center;
+    width: 45%;
+    font-size: 12px;
+    padding: 0.6rem;
   }
   
   .zz h2 {
     font-size: 1.2rem;
-    text-align: center;
   }
   
-  .zz ul {
-    text-align: center;
-    padding: 0;
+  .zz ul li a {
+    font-size: 12px;
+    margin-left: -1.2rem;
   }
   
   .footer-down {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-top: 1rem;
-    height: 12vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 2.5rem;
+    height: 8vh;
   }
   
   .footer-down p {
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .footer-down-icons {
@@ -396,24 +297,19 @@ footer {
   }
 }
 
-/* Tablets (576px to 767px) */
-@media (max-width: 767px) and (min-width: 576px) {
-  footer {
-    height: 80vh;
-  }
-  
+/* ========== TABLET PORTRAIT ========== */
+@media screen and (min-width: 600px) and (max-width: 767px) {
   .footer-up {
     flex-direction: column;
-    padding-top: 1.5rem;
-    align-items: center;
+    padding-top: 2rem;
+    gap: 2rem;
   }
   
   .qq {
-    width: 95%;
-    height: 30vh;
-    padding-left: 0;
-    text-align: center;
-    margin-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    height: auto;
+    padding-bottom: 1.5rem;
   }
   
   .qq h1 {
@@ -421,65 +317,65 @@ footer {
   }
   
   .qq p {
-    font-size: 12px;
-    line-height: 1.3rem;
+    font-size: 10px;
+    line-height: 1rem;
   }
   
   .qq button {
-    width: 60%;
-    font-size: 12px;
-    padding: 0.5rem;
+    width: 50%;
+    font-size: 11px;
+    padding: 0.7rem;
+    margin-top: 1rem;
   }
   
   .zz {
-    width: 95%;
-    height: 30vh;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   
   .zz h2 {
     font-size: 1.1rem;
-  }
-  
-  .zz ul li {
-    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
   }
   
   .zz ul li a {
-    font-size: 14px;
+    font-size: 11px;
+    margin-left: 0;
+    padding: 0.3rem 0;
   }
   
   .footer-down {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    margin-top: 0.5rem;
-    height: 15vh;
-    text-align: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-top: 2rem;
+    height: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
   
   .footer-down p {
-    font-size: 12px;
+    font-size: 11px;
   }
   
   .footer-down-icons {
     font-size: 24px;
-    gap: 1.5rem;
+    gap: 0.7rem;
   }
 }
 
-/* Mobile Landscape (481px to 575px) */
-@media (max-width: 575px) and (min-width: 481px) {
-  footer {
-    height: 85vh;
-  }
-  
+/* ========== MOBILE LANDSCAPE ========== */
+@media screen and (min-width: 480px) and (max-width: 599px) {
   .footer-up {
-    padding-top: 1rem;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    gap: 1.8rem;
   }
   
   .qq {
-    height: 35vh;
-    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: auto;
+    padding-bottom: 1.2rem;
   }
   
   .qq h1 {
@@ -487,18 +383,19 @@ footer {
   }
   
   .qq p {
-    font-size: 11px;
-    line-height: 1.2rem;
+    font-size: 9px;
+    line-height: 0.9rem;
   }
   
   .qq button {
-    width: 70%;
-    font-size: 11px;
-    padding: 0.4rem;
+    width: 60%;
+    font-size: 10px;
+    padding: 0.6rem;
   }
   
   .zz {
-    height: 32vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   
   .zz h2 {
@@ -506,204 +403,298 @@ footer {
   }
   
   .zz ul li a {
-    font-size: 12px;
+    font-size: 10px;
+    margin-left: 0;
+    padding: 0.25rem 0;
   }
   
   .footer-down {
-    height: 18vh;
-    gap: 0.8rem;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    margin-top: 1.5rem;
+    gap: 1rem;
+    height: auto;
+    text-align: center;
+    width: 100%;
   }
   
   .footer-down p {
-    font-size: 11px;
+    font-size: 10px;
   }
   
   .footer-down-icons {
     font-size: 22px;
+    justify-content: center;
   }
 }
 
-/* Mobile Portrait (320px to 480px) */
-@media (max-width: 480px) {
-  footer {
-    height: 100vh;
-  }
-  
+/* ========== MOBILE PORTRAIT ========== */
+@media screen and (min-width: 360px) and (max-width: 479px) {
   .footer-up {
     flex-direction: column;
-    padding-top: 0.8rem;
-    align-items: center;
-    /* border: 2px solid red; */
+    padding-top: 1.2rem;
+    gap: 1.5rem;
   }
   
   .qq {
-    width: 100%;
-    height: 38vh;
-    padding: 0 1rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: auto;
+    padding-bottom: 1rem;
   }
   
   .qq h1 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    /* border: 2px solid yellow; */
-    text-align: left;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
   }
   
   .qq p {
-    font-size: 10px;
-    line-height: 1.5rem;
+    font-size: 8px;
+    line-height: 0.8rem;
     margin-top: 0.3rem;
-      text-align: left;
   }
   
   .qq button {
-    width: 80%;
-    font-size: 10px;
-    padding: 0.4rem;
-    margin-top: 1.3rem;
+    width: 70%;
+    font-size: 9px;
+    padding: 0.5rem;
+    margin-top: 0.8rem;
   }
   
   .zz {
-    width: 100%;
-    height: 35vh;
-    padding: 0 1rem;
-    /* border: 2px solid yellow; */
-    margin-top: -8rem;
-  /* justify-content: left !important; */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   
   .zz h2 {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
-    text-align: left;
-    margin-left: -14rem;
-  }
-  
-  .zz ul {
-    margin-top: 0.3rem;
-    /* border: 2px solid blue; */
-    margin-left: -17rem;
   }
   
   .zz ul li {
-    margin-top: 0.2rem;
-    text-align: left;
-    /* border: 2px solid red; */
+    margin-bottom: 0.3rem;
   }
   
   .zz ul li a {
-    font-size: 13px;
+    font-size: 9px;
+    margin-left: 0;
+    padding: 0.2rem 0;
+    letter-spacing: 0.05em;
   }
   
   .footer-down {
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    margin-top: 0;
-    height: 17vh;
+    padding: 1.2rem 1.5rem;
+    margin-top: 1.2rem;
+    gap: 0.8rem;
+    height: auto;
     text-align: center;
+    width: 100%;
   }
   
   .footer-down p {
-    font-size: 10px;
+    font-size: 9px;
   }
   
   .footer-down-icons {
     font-size: 20px;
-    gap: 1rem;
+    gap: 0.6rem;
+    justify-content: center;
   }
 }
 
-/* Extra Small Mobile (below 320px) */
-@media (max-width: 319px) {
-  footer {
-    height: 95vh;
-  }
-  
+/* ========== SMALL MOBILE ========== */
+@media screen and (min-width: 320px) and (max-width: 359px) {
   .footer-up {
-    padding-top: 0.5rem;
+    flex-direction: column;
+    padding-top: 1rem;
+    gap: 1.2rem;
   }
   
   .qq {
-    height: 40vh;
-    padding: 0 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: auto;
+    padding-bottom: 0.8rem;
   }
   
   .qq h1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
   }
   
   .qq p {
-    font-size: 9px;
-    line-height: 1rem;
+    font-size: 7px;
+    line-height: 0.7rem;
   }
   
   .qq button {
-    width: 90%;
-    font-size: 9px;
-    padding: 0.3rem;
+    width: 75%;
+    font-size: 8px;
+    padding: 0.4rem;
   }
   
   .zz {
-    height: 38vh;
-    padding: 0 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   
   .zz h2 {
     font-size: 0.8rem;
+    margin-bottom: 0.4rem;
   }
   
   .zz ul li a {
-    font-size: 10px;
+    font-size: 8px;
+    padding: 0.15rem 0;
+    margin-left: 0;
   }
   
   .footer-down {
-    height: 17vh;
-    padding: 0.3rem 0.5rem;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 1rem;
+    gap: 0.6rem;
+    height: auto;
+    text-align: center;
+    width: 100%;
   }
   
   .footer-down p {
-    font-size: 9px;
+    font-size: 8px;
   }
   
   .footer-down-icons {
     font-size: 18px;
-    gap: 0.8rem;
+    gap: 0.5rem;
+    justify-content: center;
   }
 }
 
-/* Landscape Orientation on Mobile */
-@media (max-width: 767px) and (orientation: landscape) {
-  footer {
-    height: 120vh;
-  }
-  
+/* ========== EXTRA SMALL MOBILE ========== */
+@media screen and (max-width: 319px) {
   .footer-up {
-    padding-top: 1rem;
+    flex-direction: column;
+    padding-top: 0.8rem;
+    gap: 1rem;
   }
   
   .qq {
-    height: 45vh;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    height: auto;
+    padding-bottom: 0.6rem;
+  }
+  
+  .qq h1 {
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+  }
+  
+  .qq p {
+    font-size: 6px;
+    line-height: 0.6rem;
+  }
+  
+  .qq button {
+    width: 80%;
+    font-size: 7px;
+    padding: 0.3rem;
   }
   
   .zz {
-    height: 45vh;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  
+  .zz h2 {
+    font-size: 0.7rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .zz ul li a {
+    font-size: 7px;
+    padding: 0.1rem 0;
+    margin-left: 0;
   }
   
   .footer-down {
-    height: 25vh;
-    margin-top: 1rem;
+    flex-direction: column;
+    padding: 0.8rem;
+    margin-top: 0.8rem;
+    gap: 0.5rem;
+    height: auto;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer-down p {
+    font-size: 7px;
+  }
+  
+  .footer-down-icons {
+    font-size: 16px;
+    gap: 0.4rem;
+    justify-content: center;
   }
 }
 
-/* Print Styles */
+/* ========== ORIENTATION SPECIFIC ========== */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .qq {
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .footer-down {
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+/* ========== HIGH DPI DISPLAYS ========== */
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+       screen and (min-resolution: 192dpi) {
+  .qq h1,
+  .zz h2,
+  .footer-down p {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .qq p,
+  .zz ul li a {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ========== HOVER STATES FOR TOUCH DEVICES ========== */
+@media (hover: none) and (pointer: coarse) {
+  .qq button:active {
+    opacity: 0.8;
+    transform: scale(0.98);
+  }
+  
+  .zz ul li a:active {
+    opacity: 0.7;
+  }
+  
+  .footer-down-icons a:active {
+    opacity: 0.7;
+    transform: scale(0.95);
+  }
+}
+
+/* ========== PRINT STYLES ========== */
 @media print {
   footer {
-    background-color: transparent;
-    height: auto;
-    page-break-inside: avoid;
+    background-color: transparent !important;
+    color: #000 !important;
+    border-top: 2px solid #000;
+    margin-top: 2rem;
   }
   
   .footer-up {
@@ -711,31 +702,32 @@ footer {
     padding-top: 1rem;
   }
   
-  .qq, .zz {
-    height: auto;
-    padding: 0.5rem;
+  .qq,
+  .zz {
+    padding-left: 0;
+    margin-bottom: 1rem;
   }
   
-  .qq h1, .zz h2 {
-    color: black;
-  }
-  
-  .qq p, .zz ul li a {
-    color: black;
+  .qq h1,
+  .qq p,
+  .zz h2,
+  .zz ul li a,
+  .footer-down p {
+    color: #000 !important;
   }
   
   .qq button {
-    display: none;
+    background-color: transparent !important;
+    border: 1px solid #000 !important;
+    color: #000 !important;
   }
   
   .footer-down {
-    height: auto;
-    padding: 0.5rem;
-    border-top: 1px solid black;
-  }
-  
-  .footer-down p {
-    color: black;
+    flex-direction: column;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%;
   }
   
   .footer-down-icons {

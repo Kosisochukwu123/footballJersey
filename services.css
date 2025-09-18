@@ -13,6 +13,7 @@
   text-transform: capitalize;
   display: flex;
   justify-content: center;
+
   align-items: center;
 }
 
@@ -20,6 +21,7 @@
   font-weight: 600;
   color: gray;
   font-family: "Almarai", sans-serif;
+  margin-top: 1rem;
 }
 
 .services-box img {
@@ -28,7 +30,6 @@
   letter-spacing: 0.1em;
   margin-right: 0.5rem;
 }
-
 
 /* ===============================
    MEDIA QUERIES FOR SERVICES
@@ -43,13 +44,16 @@
 
 /* Tablets */
 @media (max-width: 992px) {
-  .services {
-    flex-wrap: wrap; /* allow wrapping */
-    justify-content: center;
-    gap: 1rem;
-    height: auto; /* remove fixed height */
+   .services {
+    gap: 0.8rem;
+    background: linear-gradient(135deg, #e0f7fa 0%, #fffde4 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    padding-left: 1rem !important;
+    height: fit-content;
   }
-
   .services-box {
     flex: 1 1 45%; /* two per row */
     justify-content: flex-start;
@@ -62,11 +66,15 @@
 
 /* Large Phones */
 @media (max-width: 768px) {
-  .services {
-    flex-direction: column; /* stack items */
-    align-items: flex-start;
-    gap: 1rem;
-    height: auto;
+   .services {
+    gap: 0.8rem;
+    background: linear-gradient(135deg, #e0f7fa 0%, #fffde4 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+     padding-left: 1rem !important;
+    height: fit-content;
   }
 
   .services-box {
@@ -94,10 +102,10 @@
     padding: 0rem 0.5rem;
   }
 
-  .services-box{
-     height: 10vh;
-     text-align: center;
-      display: grid;
+  .services-box {
+    height: 10vh;
+    text-align: center;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: -3rem;
   }

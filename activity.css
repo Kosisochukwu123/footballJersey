@@ -13,7 +13,7 @@
 
 .activity-top h2 {
   width: 40%;
-  font-size: 30px;
+  font-size: 40px;
   font-family: var(--header-font);
 }
 
@@ -212,6 +212,10 @@
 @media (max-width: 576px) {
   .activity {
     width: 95% !important;
+  }
+
+  .activity-top{
+    overflow: hidden;
   }
 
   .activity-content {

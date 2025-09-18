@@ -25,17 +25,113 @@
 <body>
 
 
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-wrapper">
+            <!-- Logo -->
+            <a href="#" class="nav-logo">YourLogo</a>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <ul class="mobile-menu-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        // Hamburger menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const body = document.body;
+        let isMenuOpen = false;
+
+        // Toggle menu function
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            
+            // Toggle classes
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            body.classList.toggle('menu-open');
+            
+            // Update aria-expanded for accessibility
+            hamburger.setAttribute('aria-expanded', isMenuOpen);
+        }
+
+        // Event listeners
+        hamburger.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking on menu links
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-links a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (isMenuOpen) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // Close menu when clicking outside
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                toggleMenu();
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1023 && isMenuOpen) {
+                toggleMenu();
+            }
+        });
+
+        // Prevent menu from staying open on orientation change
+        window.addEventListener('orientationchange', () => {
+            if (isMenuOpen) {
+                setTimeout(() => {
+                    if (window.innerWidth > 1023) {
+                        toggleMenu();
+                    }
+                }, 500);
+            }
+        });
+    </script>
+
+
+
+
 
     <header>
 
-        <nav>
+        <!-- <nav>
 
             <div class="nav-logo">
 
-
-
                 <p>kosi Clothing</p>
-
             </div>
 
             <div class="nav-links">
@@ -56,7 +152,7 @@
 
             </div>
 
-        </nav>
+        </nav> -->
 
         <div class="header-bold">
             Best online store to get your football jerseys in africa
@@ -363,42 +459,6 @@
 
 
 
-    <section class="carousel-section">
-
-
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/westham-away-kit.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/arsenal-away-kit.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/brighton-home-kit.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-
-
-
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-
-    </section>
-
-
-
     <section class="styling">
 
         <div class="styling-left">
@@ -437,7 +497,8 @@
 
         <div class="parallax-content">
             <h2>Unleash Your Passion</h2>
-            <p>Wear your favorite club’s colors with pride. Our jerseys are more than just apparel—they’re a statement.</p>
+            <p>Wear your favorite club’s colors with pride. Our jerseys are more than just apparel—they’re a statement.
+            </p>
         </div>
 
     </section>

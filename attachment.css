@@ -29,7 +29,6 @@
   text-shadow: 2px 2px 2px black;
 }
 
-
 /* Your existing fixed attachment styles */
 .fixed-attachment {
   height: 100vh;
@@ -70,13 +69,14 @@
 @media (min-width: 1400px) {
   .fixed-attachment {
     background-position: center bottom;
+    background-image: url(images/premier-league.jpg) !important;
   }
-  
+
   .fixed-attachment h2 {
     font-size: 3.5rem;
     text-shadow: 3px 3px 3px black;
   }
-  
+
   .fixed-attachment p {
     font-size: 1.8rem;
     margin-top: 1.5rem;
@@ -86,10 +86,15 @@
 
 /* Large Desktops (1200px to 1399px) */
 @media (max-width: 1399px) and (min-width: 1200px) {
+  .background-attachment {
+    background-position: center;
+    background-image: url(images/premier-league.jpg) !important;
+  }
+
   .fixed-attachment h2 {
     font-size: 3.2rem;
   }
-  
+
   .fixed-attachment p {
     font-size: 1.6rem;
     margin-top: 1.2rem;
@@ -100,13 +105,14 @@
 @media (max-width: 1199px) and (min-width: 992px) {
   .fixed-attachment {
     background-position: center;
+    background-image: url(images/premier-league.jpg) !important;
   }
-  
+
   .fixed-attachment h2 {
     font-size: 2.8rem;
     padding: 0 2rem;
   }
-  
+
   .fixed-attachment p {
     font-size: 1.4rem;
     padding: 0 2rem;
@@ -119,14 +125,15 @@
     background-position: center;
     background-attachment: scroll; /* Fixed attachment can cause issues on tablets */
     padding: 2rem;
+    background-image: url(images/premier-league.jpg) !important;
   }
-  
+
   .fixed-attachment h2 {
     font-size: 2.4rem;
     line-height: 1.2;
     padding: 0 1rem;
   }
-  
+
   .fixed-attachment p {
     font-size: 1.2rem;
     margin-top: 1rem;
@@ -143,15 +150,16 @@
     padding: 1.5rem;
     min-height: 80vh;
     height: auto;
+    background-image: url(images/premier-league.jpg) !important;
   }
-  
+
   .fixed-attachment h2 {
     font-size: 2rem;
     line-height: 1.1;
     padding: 0 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   }
-  
+
   .fixed-attachment p {
     font-size: 1rem;
     margin-top: 0.8rem;
@@ -171,8 +179,9 @@
     height: auto;
     flex-direction: column;
     text-align: center;
+    background-image: url(images/premier-league.jpg) !important;
   }
-  
+
   .fixed-attachment h2 {
     font-size: 1.8rem;
     line-height: 1.1;
@@ -180,7 +189,7 @@
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
   }
-  
+
   .fixed-attachment p {
     font-size: 0.9rem;
     margin-top: 0.5rem;
@@ -198,11 +207,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(images/premier-league.jpg) !important;
     background-position: center !important;
     background-size: cover !important;
+    background-image: url(images/premier-league.jpg) !important;
   }
-  
+
   .fixed-attachment h2 {
     font-size: 1.5rem;
     line-height: 1.1;
@@ -212,7 +221,7 @@
     word-wrap: break-word;
     hyphens: auto;
   }
-  
+
   .fixed-attachment p {
     font-size: 1rem;
     margin-top: 0.5rem;
@@ -231,8 +240,9 @@
     padding: 0.5rem;
     min-height: 50vh;
     height: auto;
+    background-image: url(images/premier-league.jpg) !important;
   }
-  
+
   .fixed-attachment h2 {
     font-size: 1.2rem;
     line-height: 1;
@@ -240,7 +250,7 @@
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     word-break: break-word;
   }
-  
+
   .fixed-attachment p {
     font-size: 0.7rem;
     margin-top: 0.3rem;
@@ -266,12 +276,12 @@
     background-position: center;
     padding: 0.5rem;
   }
-  
+
   .fixed-attachment h2 {
     font-size: 1.4rem;
     margin: 0;
   }
-  
+
   .fixed-attachment p {
     font-size: 0.8rem;
     margin-top: 0.3rem;
@@ -303,13 +313,13 @@
     color: black;
     padding: 2rem;
   }
-  
+
   .fixed-attachment h2 {
     color: black;
     text-shadow: none;
     font-size: 2rem;
   }
-  
+
   .fixed-attachment p {
     color: black;
     text-shadow: none;
