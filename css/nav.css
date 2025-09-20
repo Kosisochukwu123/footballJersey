@@ -364,6 +364,7 @@
   .mobile-menu {
     margin-top: 2rem !important;
     background-color: #f37527a1;
+    overflow: scroll;
   }
 
   .mobile-menu-links a {
@@ -384,7 +385,7 @@
   }
 
   .nav-icon i {
-    color: white;
+    color: black;
     font-size: 1.5rem;
   }
 }
