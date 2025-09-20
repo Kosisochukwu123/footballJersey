@@ -279,8 +279,8 @@
 
   .nav-logo {
     font-size: 1.2rem;
-     width: fit-content;
-     white-space: nowrap;
+    width: fit-content;
+    white-space: nowrap;
   }
 
   .hamburger {
@@ -354,15 +354,38 @@
   }
 }
 
-/* Landscape Mobile */
-@media screen and (orientation: landscape) and (max-height: 500px) {
-  .mobile-menu-links a {
-    font-size: 1.3rem;
-    padding: 0.5rem;
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .nav-container {
+    width: 100vw !important;
+    position: fixed;
+    top: 0;
   }
 
-  .mobile-menu-links li {
-    margin: 0.8rem 0;
+  .mobile-menu {
+    margin-top: 2rem !important;
+    background-color: #f37527a1;
+  }
+
+  .mobile-menu-links a {
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    margin-left: -2rem;
+    color: black;
+    font-weight: 700;
+  }
+
+  .nav-icon {
+    font-size: 1rem !important;
+    width: fit-content;
+    white-space: nowrap !important;
+    margin-left: 25rem !important;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-icon i {
+    color: white;
+    font-size: 1.5rem;
   }
 }
 

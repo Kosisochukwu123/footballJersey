@@ -2,15 +2,14 @@
 @import url(https://fonts.bunny.net/css?family=almarai:300);
 @import url(https://fonts.bunny.net/css?family=aguafina-script:400);
 
-@import url(nav.css);
-@import url(services.css);
-@import url(activity.css);
-@import url(display.css);
-@import url(footer.css);
-@import url(styling.css);
-@import url(attachment.css);
-@import url(header.css);
-@import url(carousel.css);
+@import url(../css/nav.css);
+@import url(../css/services.css);
+@import url(../css/activity.css);
+@import url(../css/display.css);
+@import url(../css/footer.css);
+@import url(../css/styling.css);
+@import url(../css/attachment.css);
+@import url(../css/header.css);
 
 * {
   padding: 0;

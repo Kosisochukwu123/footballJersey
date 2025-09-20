@@ -85,18 +85,18 @@
 }
 
 .activity-content-box-one {
-  background-image: url(images/barcajersey.png);
+  background-image: url(../images/barcajersey.png);
   height: inherit;
 }
 
 .activity-content-box-two {
   height: 45vh;
   width: 50%;
-  background-image: url(images/barcajersey.png);
+  background-image: url(../images/barcajersey.png);
 }
 
 .activity-content-box-two:nth-child(2) {
-  background-image: url(images/barcajersey.png);
+  background-image: url(../images/barcajersey.png);
 }
 
 .activity-content-box-two .activity-overlay button {
@@ -109,7 +109,7 @@
 .activity-content-box {
   height: 43.5vh;
   margin-top: 0.5rem;
-  background-image: url(images/barcajersey.png);
+  background-image: url(../images/barcajersey.png);
 }
 
 /* ===============================
@@ -283,4 +283,12 @@
     height: 5.5vh;
     width: 22%;
   }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+ .activity-content-box-one,
+.activity-content-box-two,
+.activity-content-box {
+  height: 80vh;
+}
 }

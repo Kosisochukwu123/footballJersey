@@ -29,38 +29,6 @@
   text-shadow: 2px 2px 2px black;
 }
 
-/* Your existing fixed attachment styles */
-.fixed-attachment {
-  height: 100vh;
-  background-image: url(images/premier-league.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.fixed-attachment h2 {
-  font-size: 3rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 0;
-  font-family: var(--header-font);
-  text-shadow: 2px 2px 2px black;
-}
-
-.fixed-attachment p {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 1rem;
-  font-family: var(--header-font);
-  text-shadow: 2px 2px 2px black;
-}
-
 /* ==============================================
    MEDIA QUERIES FOR RESPONSIVE FIXED ATTACHMENT
    ============================================== */
@@ -209,7 +177,7 @@
     align-items: center;
     background-position: center !important;
     background-size: cover !important;
-    background-image: url(images/premier-league.jpg) !important;
+    background-image: url(../images/premier-league.jpg) !important;
   }
 
   .fixed-attachment h2 {
@@ -267,24 +235,9 @@
   }
 }
 
-/* Landscape Orientation on Mobile Devices */
-@media (max-width: 767px) and (orientation: landscape) {
+@media screen and (max-width: 1024px) and (orientation: landscape) {
   .fixed-attachment {
-    height: 100vh;
-    min-height: 100vh;
-    background-attachment: scroll;
-    background-position: center;
-    padding: 0.5rem;
-  }
-
-  .fixed-attachment h2 {
-    font-size: 1.4rem;
-    margin: 0;
-  }
-
-  .fixed-attachment p {
-    font-size: 0.8rem;
-    margin-top: 0.3rem;
+    background-image: url(../images/premier-league.jpg) !important;
   }
 }
 

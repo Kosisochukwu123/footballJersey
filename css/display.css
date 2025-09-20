@@ -64,22 +64,22 @@
 /* BELOW YOU CAN BE ABLE TO CHANGE THE IMAGES ON THE WEBSITE ACCORDINGLY */
 
 .display-down-box:nth-child(1) {
-  background-image: url(images/barcajersey.png);
+  background-image: url(../images/barcajersey.png);
 }
 .display-down-box:nth-child(2) {
-  background-image: url(images/customized-kit.png);
+  background-image: url(../images/customized-kit.png);
 }
 .display-down-box:nth-child(3) {
-  background-image: url(images/manunited-black.png);
+  background-image: url(../images/manunited-black.png);
 }
 .display-down-box:nth-child(4) {
-  background-image: url(images/barcajersey.png);
+  background-image: url(../images/barcajersey.png);
 }
 .display-down-box:nth-child(5) {
-  background-image: url(images/barcajersey.png);
+  background-image: url(../images/barcajersey.png);
 }
 .display-down-box:nth-child(6) {
-  background-image: url(images/barcajersey.png);
+  background-image: url(../images/barcajersey.png);
 }
 
 .uu {
@@ -216,7 +216,7 @@
   }
 
   .ii button {
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -239,3 +239,21 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .display-down-box{
+  /* border: 2px solid blue; */
+  height: 70vh;
+  }
+
+  .ii{
+    padding: 2rem 2rem !important;
+  }
+
+  .ii button{
+    width: 40%;
+  }
+
+
+}
+
