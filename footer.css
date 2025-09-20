@@ -383,8 +383,9 @@ footer {
   }
   
   .qq p {
-    font-size: 9px;
+    font-size: 12px;
     line-height: 0.9rem;
+  
   }
   
   .qq button {
@@ -403,7 +404,7 @@ footer {
   }
   
   .zz ul li a {
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 0;
     padding: 0.25rem 0;
   }
@@ -419,7 +420,7 @@ footer {
   }
   
   .footer-down p {
-    font-size: 10px;
+    font-size: 12px;
   }
   
   .footer-down-icons {
@@ -449,14 +450,14 @@ footer {
   }
   
   .qq p {
-    font-size: 8px;
+    font-size: 12px;
     line-height: 0.8rem;
     margin-top: 0.3rem;
   }
   
   .qq button {
     width: 70%;
-    font-size: 9px;
+    font-size: 12px;
     padding: 0.5rem;
     margin-top: 0.8rem;
   }
@@ -467,7 +468,7 @@ footer {
   }
   
   .zz h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
   }
   
@@ -476,7 +477,7 @@ footer {
   }
   
   .zz ul li a {
-    font-size: 9px;
+    font-size: 12px;
     margin-left: 0;
     padding: 0.2rem 0;
     letter-spacing: 0.05em;
@@ -493,7 +494,7 @@ footer {
   }
   
   .footer-down p {
-    font-size: 9px;
+    font-size: 12px;
   }
   
   .footer-down-icons {
@@ -519,12 +520,12 @@ footer {
   }
   
   .qq h1 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.03em;
   }
   
   .qq p {
-    font-size: 7px;
+    font-size: 12px;
     line-height: 0.7rem;
   }
   
@@ -540,12 +541,12 @@ footer {
   }
   
   .zz h2 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 0.4rem;
   }
   
   .zz ul li a {
-    font-size: 8px;
+    font-size: 12px;
     padding: 0.15rem 0;
     margin-left: 0;
   }
@@ -561,7 +562,7 @@ footer {
   }
   
   .footer-down p {
-    font-size: 8px;
+    font-size: 12px;
   }
   
   .footer-down-icons {

@@ -29,16 +29,22 @@
     <nav class="nav-container">
         <div class="nav-wrapper">
             <!-- Logo -->
-            <a href="#" class="nav-logo">YourLogo</a>
+            <a href="#" class="nav-logo">kosi clothing</a>
 
             <!-- Desktop Navigation -->
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">collections</a></li>
+                <li><a href="#">features</a></li>
             </ul>
+
+            <div class="nav-icon">
+                <a href="#" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" title="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+
 
             <!-- Hamburger Menu Button -->
             <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -52,74 +58,15 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
         <ul class="mobile-menu-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">collections</a></li>
+            <li><a href="#">features</a></li>
         </ul>
     </div>
 
 
-
-    <script>
-        // Hamburger menu functionality
-        const hamburger = document.querySelector('.hamburger');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const body = document.body;
-        let isMenuOpen = false;
-
-        // Toggle menu function
-        function toggleMenu() {
-            isMenuOpen = !isMenuOpen;
-            
-            // Toggle classes
-            hamburger.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
-            body.classList.toggle('menu-open');
-            
-            // Update aria-expanded for accessibility
-            hamburger.setAttribute('aria-expanded', isMenuOpen);
-        }
-
-        // Event listeners
-        hamburger.addEventListener('click', toggleMenu);
-
-        // Close menu when clicking on menu links
-        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-links a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (isMenuOpen) {
-                    toggleMenu();
-                }
-            });
-        });
-
-        // Close menu when clicking outside
-        mobileMenu.addEventListener('click', (e) => {
-            if (e.target === mobileMenu) {
-                toggleMenu();
-            }
-        });
-
-        // Handle window resize
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 1023 && isMenuOpen) {
-                toggleMenu();
-            }
-        });
-
-        // Prevent menu from staying open on orientation change
-        window.addEventListener('orientationchange', () => {
-            if (isMenuOpen) {
-                setTimeout(() => {
-                    if (window.innerWidth > 1023) {
-                        toggleMenu();
-                    }
-                }, 500);
-            }
-        });
-    </script>
+    <script src="javascript/nav.js"></script>
 
 
 
@@ -131,24 +78,19 @@
 
             <div class="nav-logo">
 
-                <p>kosi Clothing</p>
             </div>
 
             <div class="nav-links">
 
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">collections</a></li>
-                    <li><a href="#">features</a></li>
+                  
                 </ul>
 
             </div>
 
             <div class="nav-button">
 
-                <a href="#" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#" title="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        
 
             </div>
 
