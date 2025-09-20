@@ -1,6 +1,6 @@
 .fixed-attachment {
   height: 100vh;
-  background-image: url(images/premier-league.jpg);
+  background-image: url(../images/premier-league.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
@@ -37,7 +37,7 @@
 @media (min-width: 1400px) {
   .fixed-attachment {
     background-position: center bottom;
-    background-image: url(images/premier-league.jpg) !important;
+    background-image: url(../images/premier-league.jpg) !important;
   }
 
   .fixed-attachment h2 {
@@ -56,7 +56,7 @@
 @media (max-width: 1399px) and (min-width: 1200px) {
   .background-attachment {
     background-position: center;
-    background-image: url(images/premier-league.jpg) !important;
+    background-image: url(../images/premier-league.jpg) !important;
   }
 
   .fixed-attachment h2 {
@@ -73,7 +73,7 @@
 @media (max-width: 1199px) and (min-width: 992px) {
   .fixed-attachment {
     background-position: center;
-    background-image: url(images/premier-league.jpg) !important;
+    background-image: url(../images/premier-league.jpg) !important;
   }
 
   .fixed-attachment h2 {
@@ -93,7 +93,7 @@
     background-position: center;
     background-attachment: scroll; /* Fixed attachment can cause issues on tablets */
     padding: 2rem;
-    background-image: url(images/premier-league.jpg) !important;
+    background-image: url(../images/premier-league.jpg) !important;
   }
 
   .fixed-attachment h2 {
@@ -110,6 +110,8 @@
   }
 }
 
+
+
 /* Tablets (576px to 767px) */
 @media (max-width: 767px) and (min-width: 576px) {
   .fixed-attachment {
@@ -118,7 +120,8 @@
     padding: 1.5rem;
     min-height: 80vh;
     height: auto;
-    background-image: url(images/premier-league.jpg) !important;
+    background-image: url(../images/premier-league.jpg) !important;
+    margin-top: -23.8rem;
   }
 
   .fixed-attachment h2 {
@@ -147,7 +150,7 @@
     height: auto;
     flex-direction: column;
     text-align: center;
-    background-image: url(images/premier-league.jpg) !important;
+    background-image: url(../images/premier-league.jpg) !important;
   }
 
   .fixed-attachment h2 {
@@ -208,7 +211,7 @@
     padding: 0.5rem;
     min-height: 50vh;
     height: auto;
-    background-image: url(images/premier-league.jpg) !important;
+    background-image: url(../images/premier-league.jpg) !important;
   }
 
   .fixed-attachment h2 {

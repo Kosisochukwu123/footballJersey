@@ -64,22 +64,22 @@
 /* BELOW YOU CAN BE ABLE TO CHANGE THE IMAGES ON THE WEBSITE ACCORDINGLY */
 
 .display-down-box:nth-child(1) {
-  background-image: url(../images/barcajersey.png);
+  background-image: url(../images/arsenalhomejersey-single.png);
 }
 .display-down-box:nth-child(2) {
-  background-image: url(../images/customized-kit.png);
+  background-image: url(../images/liverpoolaway-singgle.jpg);
 }
 .display-down-box:nth-child(3) {
   background-image: url(../images/manunited-black.png);
 }
 .display-down-box:nth-child(4) {
-  background-image: url(../images/barcajersey.png);
+  background-image: url(../images/brightonjersey-away-single.jpg);
 }
 .display-down-box:nth-child(5) {
-  background-image: url(../images/barcajersey.png);
+  background-image: url(../images/chealseasingle-away-kit.jpg);
 }
 .display-down-box:nth-child(6) {
-  background-image: url(../images/barcajersey.png);
+  background-image: url(../images/astonvilla-away-single.jpg);
 }
 
 .uu {
@@ -183,7 +183,7 @@
   }
 
   .display-down {
-    grid-template-columns: 1fr; /* single column */
+    grid-template-columns: 1fr 1fr; /* single column */
     gap: 1.5rem;
   }
 
@@ -196,11 +196,11 @@
   }
 
   .ii {
-    padding: 0rem 4rem !important;
+    padding: 0rem 1rem !important;
   }
 
   .ii button {
-    width: auto;
+    width: 40%;
     padding: 0.6rem 1.2rem;
     width: 30%;
   }
@@ -217,6 +217,11 @@
 
   .ii button {
     width: 40%;
+  }
+
+   .display-down {
+    grid-template-columns: 1fr; /* single column */
+    gap: 1.5rem;
   }
 }
 

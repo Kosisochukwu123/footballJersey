@@ -22,10 +22,20 @@
 .nav-logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #333;
+  color: white;
   text-decoration: none;
   font-family: var(--logo-text);
   letter-spacing: 0.1em;
+}
+
+.nav-icon {
+  gap: 3rem;
+  display: flex;
+}
+
+.nav-icon i {
+  color: white;
+  font-size: 25px;
 }
 
 /* Desktop Navigation */
@@ -33,20 +43,22 @@
   display: flex;
   list-style: none;
   gap: 2rem;
+  margin-top: 1rem;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: 500;
   font-size: 1rem;
   transition: color 0.3s ease;
   position: relative;
   text-transform: capitalize;
+  font-family: var(--text-font);
 }
 
 .nav-links a:hover {
-  color: white;
+  color: black;
 }
 
 .nav-links a::after {
@@ -56,7 +68,7 @@
   height: 2px;
   bottom: -5px;
   left: 0;
-  background: white;
+  background: black;
   transition: width 0.3s ease;
 }
 
@@ -200,17 +212,21 @@
 }
 
 /* Standard Desktop */
-@media screen and (max-width: 1439px) and (min-width: 1024px) {
+@media screen and (max-width: 1439px) and (min-width: 1025px) {
   .nav-wrapper {
     padding: 1rem 2rem;
   }
+
+
 }
 
 /* Tablet and Mobile */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .nav-links {
     display: none;
   }
+
+
 
   .hamburger {
     display: flex;
@@ -225,10 +241,41 @@
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1022px) {
+  .nav-container {
+    width: 100vw !important;
+    position: fixed !important;
+    top: 2px !important;
+  }
+
+  .nav-icon {
+    margin-left: 20rem !important;
+  }
+
+  .mobile-menu {
+    margin-top: 2rem;
+    background-color: #f37527a1 !important;
+  }
+
+  .hamburger {
+    margin-right: 2rem;
+  }
+}
+
 /* Small Tablet */
 @media screen and (max-width: 768px) {
+  .nav-container {
+    width: 100vw !important;
+    position: fixed !important;
+    top: 0 !important;
+  }
+
   .nav-wrapper {
     padding: 0.8rem 1rem;
+  }
+
+  .nav-icon {
+    margin-left: 20rem !important;
   }
 
   .nav-logo {
@@ -238,6 +285,18 @@
   .hamburger {
     width: 28px;
     height: 22px;
+  }
+
+  .mobile-menu {
+    margin-top: 2rem;
+    background-color: #f37527a1 !important;
+  }
+
+  .mobile-menu-links a {
+    font-size: 1.5rem;
+    margin-left: -4rem !important;
+    color: black;
+    font-weight: 700;
   }
 
   .mobile-menu-links a {
@@ -265,7 +324,7 @@
   .nav-icon {
     gap: 1.3rem;
     display: flex;
-    margin-left: 5rem;
+    margin-left: 5rem !important;
   }
 
   .nav-icon i {
@@ -286,6 +345,7 @@
   .hamburger {
     width: 25px;
     height: 20px;
+    margin-right: 1rem;
   }
 
   .hamburger-line {
@@ -300,7 +360,7 @@
 
   .mobile-menu-links a {
     font-size: 1.5rem;
-    margin-left: -2rem;
+    margin-left: -2rem !important;
     color: black;
     font-weight: 700;
   }

@@ -83,7 +83,7 @@
   }
 
   .styling-right {
-    background-image: url(images/manunited-kit.jpg) !important;
+    background-image: url(../images/manunited-kit.jpg) !important;
   }
 }
 
@@ -136,7 +136,7 @@
 
   .styling-right {
     background-position: center;
-    background-image: url(images/manunited-kit.jpg) !important;
+    background-image: url(../images/manunited-kit.jpg) !important;
   }
 }
 
@@ -154,7 +154,7 @@
   .styling-right {
     width: 45%;
     background-position: center;
-    background-image: url(images/manunited-kit.jpg) !important;
+    background-image: url(../images/manunited-kit.jpg) !important;
   }
 
   .styling-left-content h2 {
@@ -183,7 +183,7 @@
 /* Tablets (576px to 767px) */
 @media (max-width: 767px) and (min-width: 576px) {
   .styling {
-    flex-direction: column;
+    flex-direction: row-reverse;
     height: auto;
     min-height: 100vh;
     margin-top: 1.5rem;
@@ -197,9 +197,9 @@
 
   .styling-right {
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     order: 1;
-    background-image: url(images/manunited-kit.jpg) !important;
+    background-image: url(../images/manunited-kit.jpg) !important;
     background-position: center;
   }
 
@@ -231,6 +231,7 @@
   }
 }
 
+
 /* Mobile Landscape (481px to 575px) */
 @media (max-width: 575px) and (min-width: 481px) {
   .styling {
@@ -248,7 +249,7 @@
   .styling-right {
     height: 35vh;
     order: 1;
-    background-image: url(images/manunited-kit.jpg) !important;
+    background-image: url(../images/manunited-kit.jpg) !important;
   }
 
   .styling-left-content {

@@ -185,6 +185,43 @@ header {
   }
 }
 
+
+@media (max-width: 767px) and (min-width: 483px){
+header {
+    padding-top: 4rem;
+    height: 80vh;
+  }
+
+  .header-bold {
+    width: 60%;
+    font-size: 24px;
+    margin-left: 4.5rem;
+    margin-top: 3rem;
+    text-align: left;
+  }
+
+  .header-bold div img {
+    width: 50%;
+    height: 22vh;
+    top: 40%;
+    left: -2%;
+}
+
+  .header-bottom-content {
+    height: 35vh;
+    width: 95%;
+    gap: 1rem;
+    text-align: center;
+    display: flex;
+  }
+
+  .header-bottom-content p {
+    width: 55%;
+    text-align: left;
+  }
+
+}
+
 /* Mobile Landscape (481px to 575px) */
 @media (max-width: 575px) and (min-width: 481px) {
   header {

@@ -92,11 +92,11 @@
 .activity-content-box-two {
   height: 45vh;
   width: 50%;
-  background-image: url(../images/barcajersey.png);
+  background-image: url(../images/fansversion.jpg);
 }
 
 .activity-content-box-two:nth-child(2) {
-  background-image: url(../images/barcajersey.png);
+  background-image: url(../images/player-version.jpg);
 }
 
 .activity-content-box-two .activity-overlay button {
@@ -109,7 +109,7 @@
 .activity-content-box {
   height: 43.5vh;
   margin-top: 0.5rem;
-  background-image: url(../images/barcajersey.png);
+  background-image: url(../images/customized-kit.png);
 }
 
 /* ===============================
